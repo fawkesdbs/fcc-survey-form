@@ -1,11 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey Form</title>
-</head>
-<body>
+    <title>Survery Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">fawkes Survey Form</h1>
+    <p id="description">Join in the fun by filling in this form</p>
     
-</body>
+    <form action="" id="survey-form">
+      <label for="name" id="name-label">
+        Name: <br>
+        <input type="text" name="name" id="name" placeholder="John Doe" required>
+      </label><br>
+      <label for="email" id="email-label">
+        Email: <br>
+        <input type="email" name="email" id="email" placeholder="johndoe@email.com" required>
+      </label><br>
+      <label for="number" id="number-label">
+        Age <span>(optional)</span>: <br>
+        <input type="number" name="age" id="number" placeholder="21" min="0" max="150">
+      </label><br>
+
+      <label for="dropdown">Why do you want to join us?
+        <select name="dropdown" id="dropdown">
+          <option value="" selected disabled>Select a reason.</option>
+          <option value="food">I heard about the free food!</option>
+          <option value="fun">I'm here for the promised fun!</option>
+          <option value="boredom">I was just bored.</option>
+          <option value="denial">Who said I want to join y'all?</option>
+        </select>
+      </label><br>
+
+      <label for="recommend">
+        Would you recommend us to a friend? <br>
+        <label for="definitely">
+          <input type="radio" name="recommend" id="definitely" value="definitely">
+          Definitely!
+        </label><br>
+        <label for="maybe">
+          <input type="radio" name="recommend" id="maybe" value="maybe">
+          Maybe.
+        </label><br>
+        <label for="not-sure">
+          <input type="radio" name="recommend" id="not-sure" value="not-sure">
+          Not sure...
+        </label><br>
+      </label><br>
+
+      <label for="offering">
+        What do you have to offer? <br>
+        <label for="snacks">
+          <input type="checkbox" name="snacks" id="snacks" value="snacks">
+          Snacks
+        </label><br>
+        <label for="drinks">
+          <input type="checkbox" name="drinks" id="drinks" value="drinks">
+          Drinks
+        </label><br>
+        <label for="venue">
+          <input type="checkbox" name="venue" id="venue" value="venue">
+          Venues
+        </label><br>
+        <label for="entertainment">
+          <input type="checkbox" name="entertainment" id="entertainment" value="entertainment">
+          Entertainment
+        </label><br>
+        <label for="company">
+          <input type="checkbox" name="company" id="company" value="company">
+          Company
+        </label><br>
+      </label><br>
+
+      <label for="comments">
+        Got any comments for us? <br>
+        <textarea name="comments" id="comments" placeholder="Comments..."></textarea>
+      </label><br>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
 </html>
+
